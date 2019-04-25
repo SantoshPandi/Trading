@@ -7,7 +7,7 @@ import krakenex
 from pykrakenapi import KrakenAPI
 api = krakenex.API()
 k = KrakenAPI(api)
-api.load_key(r"C:\Users\santo\OneDrive\Desktop\KrakenKeys.py")
+api.load_key("KrakenKeys.py")
 def main():
     print('Starting Script...')
     schedule.every(1).minutes.do(entry_exit_logic)
